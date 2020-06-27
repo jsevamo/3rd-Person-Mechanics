@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="9d2653ec-784e-43a5-9aee-3016a03135de" name="Default Changelist" comment="" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.management@3.2.12/Editor/Metadata/XRPackageMetadata.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Helper.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Helper.cs" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1dusXgb9tTQqAvyRyBrmYx0ioFJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectId" id="1dvAUbSOwn1jI1d0FBET03P8CzH" />
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -48,36 +24,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
+  <component name="WindowStateProjectService">
+    <state x="555" y="175" key="#Notifications" timestamp="1593295221404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="175" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593295221404" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="9d2653ec-784e-43a5-9aee-3016a03135de" name="Default Changelist" comment="" />
-      <created>1593286354769</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1593286354769</updated>
-      <workItem from="1593286358255" duration="3000" />
-      <workItem from="1593290625650" duration="1302000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
 </project>
