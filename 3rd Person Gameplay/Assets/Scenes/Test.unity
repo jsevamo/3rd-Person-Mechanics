@@ -421,6 +421,7 @@ MonoBehaviour:
   - th_attack_1
   - th_attack_2
   twoHanded: 0
+  enableRootMotion: 0
 --- !u!1 &2097461644
 GameObject:
   m_ObjectHideFlags: 0
