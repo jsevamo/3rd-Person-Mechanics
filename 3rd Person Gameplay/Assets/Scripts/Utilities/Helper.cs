@@ -21,6 +21,10 @@ namespace  SA
         
         //See if roor motion is enabled. Only for attacks.
         public bool enableRootMotion;
+
+        public bool useItem;
+        public bool interacting;
+        
         
         void Start()
         {
@@ -30,6 +34,7 @@ namespace  SA
         // Update is called once per frame
         void Update()
         {
+
             //CanMove is a variable that lets me know if i can apply root motion
             
             bool cannotMove = !anim.GetBool("CanMove");
@@ -37,10 +42,26 @@ namespace  SA
             
             // I want to apply root motion only if I am attacking (Cannot move)
             anim.applyRootMotion = !anim.GetBool("CanMove");
+
+
+            interacting = anim.GetBool("interacting");
             
-            //If I cannot move, I get out of the Update Loop
+            //If I cannot move because I'm attacking, I get out of the Update Loop
             if (cannotMove)
                 return;
+            
+            if (useItem)
+            {
+                anim.CrossFade("use_item", 0.2f);
+                useItem = false;
+            }
+
+            if (interacting)
+            {
+                playAnim = false;
+                vertical = Mathf.Clamp(vertical, 0, 0.5f);
+                print("jajajajajaja");
+            }
             
             //Check if we press "Two handed"
             anim.SetBool("Two_Handed", twoHanded);
@@ -53,6 +74,11 @@ namespace  SA
                 {
                     int r = Random.Range(0, oh_attacks.Length);
                     targetAnim = oh_attacks[r];
+
+                    if (vertical > 0.5f)
+                    {
+                        targetAnim = "oh_attack_3";
+                    }
                 }
                 //If two handed, choose two handed attacks
                 else
@@ -60,16 +86,22 @@ namespace  SA
                     int r = Random.Range(0, th_attacks.Length);
                     targetAnim = th_attacks[r];
                 }
+                
+                if (vertical > 0.5f)
+                {
+                    targetAnim = "oh_attack_3";
+                }fr
                 //Vertical is the variable to blend walk and running animation.
                 //Since we are attacking, it must be 0.
                 vertical = 0;
                 //we crossfade de selected attacking animation
-                anim.CrossFade(targetAnim, 0.2f);
+                anim.CrossFade(targetAnim, 0.1f);
                 //When we are done, play anim goes false again.
                 playAnim = false;
             }
             
             anim.SetFloat("Vertical", vertical);
+            
         }
     }
 
