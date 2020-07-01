@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5738875127687069190
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 1
+    value: 2.3
+  aperture:
+    overrideState: 1
+    value: 6.6
+  focalLength:
+    overrideState: 0
+    value: 50
+  kernelSize:
+    overrideState: 0
+    value: 1
 --- !u!114 &-4263526246636893457
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -61,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a34fa72bd4185749832024e9c8010bf, type: 3}
   m_Name: ScreenSpaceReflections
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -103,6 +131,7 @@ MonoBehaviour:
   - {fileID: -4263526246636893457}
   - {fileID: 8341116453864302510}
   - {fileID: -2474606002603329484}
+  - {fileID: -5738875127687069190}
 --- !u!114 &5762548540669691144
 MonoBehaviour:
   m_ObjectHideFlags: 3

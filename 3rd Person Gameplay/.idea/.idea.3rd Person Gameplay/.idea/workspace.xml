@@ -22,8 +22,8 @@
         <option value="$PROJECT_DIR$/Assets/KeepBool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KeepBool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Helper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/StateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Camera Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/StateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/CameraManager.cs" />
       </list>
@@ -80,7 +80,7 @@
       <updated>1593295210203</updated>
       <workItem from="1593295213522" duration="113000" />
       <workItem from="1593543016599" duration="6908000" />
-      <workItem from="1593621822710" duration="13380000" />
+      <workItem from="1593621822710" duration="15078000" />
     </task>
     <servers />
   </component>

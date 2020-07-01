@@ -32,12 +32,16 @@ namespace j_sevamo
         public float lookAngle;
         public float tiltAngle;
 
+        public bool invertCameraY;
+
         public void Init(Transform t)
         {
             target = t;
 
             camTrans = Camera.main.transform;
             pivot = camTrans.parent;
+
+            invertCameraY = false;
         }
 
         public void Tick(float d)
@@ -89,14 +93,21 @@ namespace j_sevamo
             lookAngle += smoothX * targetSpeed;
             transform.rotation = Quaternion.Euler(0,lookAngle,0);
 
-            tiltAngle -= smoothY * targetSpeed;
+            if (invertCameraY)
+            {
+                tiltAngle += smoothY * targetSpeed;
+            }
+            else
+            {
+                tiltAngle -= smoothY * targetSpeed;
+            }
+            
             tiltAngle = Mathf.Clamp(tiltAngle, minAngle, maxAngle);
             pivot.localRotation = Quaternion.Euler(tiltAngle, 0,0);
         }
 
         private void Awake()
         {
-
             singleton = this;
         }
     }

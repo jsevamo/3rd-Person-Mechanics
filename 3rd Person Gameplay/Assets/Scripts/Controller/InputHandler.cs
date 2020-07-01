@@ -39,6 +39,7 @@ public class InputHandler : MonoBehaviour
     {
         delta = Time.deltaTime;
         camManager.Tick(delta);
+        
     }
 
 
