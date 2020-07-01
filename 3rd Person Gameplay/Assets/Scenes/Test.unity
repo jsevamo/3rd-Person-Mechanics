@@ -488,6 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vertical: 0
+  horizontal: 0
   playAnim: 0
   oh_attacks:
   - oh_attack_1
@@ -500,6 +501,7 @@ MonoBehaviour:
   enableRootMotion: 0
   useItem: 0
   interacting: 0
+  lockon: 0
 --- !u!1 &2097461644
 GameObject:
   m_ObjectHideFlags: 0
