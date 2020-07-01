@@ -8,7 +8,8 @@ namespace  SA
     public class Helper : MonoBehaviour
     {
 
-        [Range(0, 1)] public float vertical;
+        [Range(-1, 1)] public float vertical;
+        [Range(-1, 1)] public float horizontal;
         private Animator anim;
         public bool playAnim;
         
@@ -24,6 +25,8 @@ namespace  SA
 
         public bool useItem;
         public bool interacting;
+
+        public bool lockon;
         
         
         void Start()
@@ -45,6 +48,14 @@ namespace  SA
 
 
             interacting = anim.GetBool("interacting");
+
+            if (lockon == false)
+            {
+                horizontal = 0;
+                vertical = Mathf.Clamp01(vertical);
+            }
+            
+            anim.SetBool("Lock on", lockon);
             
             //If I cannot move because I'm attacking, I get out of the Update Loop
             if (cannotMove)
@@ -90,7 +101,7 @@ namespace  SA
                 if (vertical > 0.5f)
                 {
                     targetAnim = "oh_attack_3";
-                }fr
+                }
                 //Vertical is the variable to blend walk and running animation.
                 //Since we are attacking, it must be 0.
                 vertical = 0;
@@ -101,6 +112,7 @@ namespace  SA
             }
             
             anim.SetFloat("Vertical", vertical);
+            anim.SetFloat("Horizontal", horizontal);
             
         }
     }
